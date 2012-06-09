@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" language="javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" language="javascript" src="jquery.TeamToolTip.1.0.js"></script>
+<title>Team</title>
+<style type="text/css">
+	body {
+		padding:50px;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+		
+</style>
+</head>
+
+<body>
+<div id="loading" style="display:none;"><img src="loading.gif" alt="" /></div>
+<div id="bayt_team_reprand">
+	<img src="team2.jpg" alt="" />
+</div>
+<script type="text/javascript">
+// i have used $(window).load function instead of $(document).ready, becasue i want to ensure to fully page completed loaded.
+$(window).load(function() {
+	$("#bayt_team_reprand").TeamToolTip({
+										JsonFile : 'team_memeber2.json',
+										ViewBorderFadeout : true,
+										TipPosition: 'left_right',
+										TipWidth : '220px',
+									  	TipBackground : '#FFCA4A',
+									 	TipBorderRadius : '12px'
+	});
+});
+</script>
+</body>
+</html>
